@@ -215,7 +215,7 @@ nav {
 
 .landing__bottom {
     gap: 2%;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .landing__bottom__left {
@@ -254,6 +254,7 @@ nav {
 
 .category__head {
     text-align: center;
+    padding-top: 50px;
 }
 
 .category__head h2 {
