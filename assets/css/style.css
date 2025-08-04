@@ -26,9 +26,6 @@ body {
 }
 
 
-.none {
-    display: none;
-}
 
 .display-h {
     display: flex;
@@ -43,6 +40,7 @@ body {
     flex-wrap: wrap;
 
 }
+
 
 .main__button {
     background-color: var(--maincl);
@@ -83,6 +81,17 @@ span {
     color: var(--mainp);
 }
 
+#bars_button {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+}
+
+#button__none {
+    display: none;
+}
+
 /* -----------------start header------------------------ */
 
 header {
@@ -101,6 +110,11 @@ nav {
     gap: 40px;
 }
 
+.nav__logo__img {
+    justify-content: space-between;
+    width: 100%;
+}
+
 .nav__links a {
     text-decoration: none;
     color: #000;
@@ -110,6 +124,7 @@ nav {
 .nav__links i {
     margin-left: 10px;
 }
+
 
 
 /* -----------------End header------------------------ */
@@ -225,6 +240,8 @@ nav {
     gap: 20px;
     margin-bottom: 20px;
 }
+
+
 
 .landing__bottom__right__box p {
     padding: 10px 0;
@@ -423,7 +440,12 @@ footer {
         padding: 10px 0;
     }
 
+    #bars_button {
+        display: block;
+    }
+
     .nav__button {
+        display: none;
         width: 100%;
         justify-content: center;
     }
@@ -432,26 +454,34 @@ footer {
         width: 48%;
     }
 
-    .mobile-menu-btn {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-        color: var(--maincl);
-    }
+
+
 
     .landing__header {
-        margin-top: 40px;
+        margin-top: 50px;
+        margin-bottom: -100px;
     }
 
     .landing__header h1 {
-        width: 100%;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+
+    }
+
+    .landing__header h1::before {
+        position: relative;
+        content: "Hype got you here. of it. Stay for best ever help.";
+        visibility: visible;
+        display: flex;
+        padding-top: 5px;
         font-size: 36px;
-        margin: 10px 0 30px;
-        text-align: center;
     }
 
     .landing__center {
         padding: 30px 0;
+        order: 2;
     }
 
     .landing__center .container {
@@ -469,6 +499,7 @@ footer {
 
     .landing__center__left p {
         font-size: 16px;
+        width: 70%;
     }
 
     .landing__center__right {
@@ -477,6 +508,7 @@ footer {
 
     .landing__center__right__input {
         display: flex;
+        width: 80%
     }
 
     .landing__center__right__input input {
@@ -492,6 +524,7 @@ footer {
     .landing__bottom {
         flex-direction: column;
         gap: 30px;
+        margin-top: 10px;
     }
 
     .landing__bottom__left {
@@ -509,15 +542,57 @@ footer {
     }
 
     .landing__bottom__right__box {
-        flex-direction: column;
         text-align: center;
-        padding: 15px;
     }
 
     .landing__bottom__right__box .img img {
-        width: 100%;
-        height: auto;
+        width: 220px;
         margin-bottom: 15px;
+    }
+
+    .content {
+        padding-top: 0;
+        margin-top: -20px;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .content .one {
+        visibility: hidden;
+    }
+
+    .content .one::before {
+        visibility: visible;
+        position: relative;
+        content: "Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.  Generated user generated content in real-time multiple touchpoints.";
+
+    }
+
+    .content .two {
+        visibility: hidden;
+    }
+
+    .content .two::before {
+        visibility: visible;
+        position: relative;
+        content: "Efficiently cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.";
+    }
+
+
+    .content .three {
+        visibility: hidden;
+    }
+
+    .content .three::before {
+        visibility: visible;
+        position: relative;
+        content: "Dynamically innovate resource-leveling customer service for state of the art customer service. Seamlessly fully researched growth strategies and interoperable internal or organic sources.";
+    }
+
+    .content h4 {
+        margin-bottom: -30px;
+        margin-top: -20px;
+        color: var(--mainp);
     }
 
     .category__head h2 {
@@ -543,14 +618,24 @@ footer {
 
     .news__header h2 {
         width: 100%;
-        font-size: 28px;
+        font-size: 32px;
         padding: 15px 0;
+    }
+
+    .news__button {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     .news__button button:nth-child(2) {
         display: block;
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    #button__none {
+        display: block;
     }
 
     .footer__boxs {
@@ -563,23 +648,32 @@ footer {
         margin-bottom: 0;
     }
 
+    .footer__boxs__box__content {
+        font-size: 12px;
+    }
+
+    .footer__boxs__box__content p {
+        font-size: 16px;
+    }
+
     .footer__boxs__box__content .head {
         padding-bottom: 15px;
     }
 
     .footer__boxs__box__input {
-        flex-direction: column;
-        gap: 10px;
+        margin-bottom: 20px;
+        gap: 0px;
+        width: 80%;
     }
 
     .footer__boxs__box__input input {
-        width: 100%;
+        width: 50%;
         padding: 12px;
         border-radius: 6px;
     }
 
     .footer__boxs__box__input button {
-        width: 100%;
+        width: 20%;
         border-radius: 6px;
     }
 }
@@ -636,8 +730,24 @@ footer {
         width: 90%;
     }
 
+    .landing__header {
+        margin-top: 50px;
+    }
+
     .landing__header h1 {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .landing__header h1::before {
+        position: relative;
+        content: "Hype got you here. of it. Stay for best ever help.";
+        visibility: visible;
+        display: flex;
         font-size: 24px;
+        padding-top: 25px;
+        font-size: 36px;
     }
 
     .landing__center {
@@ -645,10 +755,52 @@ footer {
     }
 
     .landing__center__left h2 {
-        font-size: 20px;
+        font-size: 28px;
     }
 
+    .landing__center__left p {
+        font-size: 18px;
+    }
 
+    .landing__center__right__input {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .landing__bottom__left {
+        width: 100%;
+    }
+
+    .landing__bottom__left h2 {
+        visibility: hidden;
+        width: 100%;
+    }
+
+    .landing__bottom__left h2::before {
+        visibility: visible;
+        position: relative;
+        content: "Reach your users with new tools";
+        font-size: 18px;
+    }
+
+    .landing__bottom__left p {
+        padding: 10px 0;
+        margin-top: -110px;
+    }
+
+    .landing__center__right__input input {
+        width: 100%;
+        background-color: var(--whitecl);
+        border-radius: 6px;
+    }
+
+    .landing__center__right__input button {
+        width: 100%;
+        border-radius: 6px;
+    }
 
     .landing__bottom__right__box .img img {
         width: 360px;
@@ -656,16 +808,84 @@ footer {
     }
 
     .content {
-        padding-top: 13px;
+        padding-top: 0;
+        margin-top: -20px;
+        font-size: 12px;
         text-align: left;
     }
+
+    .content .one {
+        visibility: hidden;
+    }
+
+    .content .one::before {
+        visibility: visible;
+        position: relative;
+        content: "Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.  Generated user generated content in real-time multiple touchpoints.";
+
+    }
+
+    .content .two {
+        visibility: hidden;
+    }
+
+    .content .two::before {
+        visibility: visible;
+        position: relative;
+        content: "Efficiently cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.";
+    }
+
+
+    .content .three {
+        visibility: hidden;
+    }
+
+    .content .three::before {
+        visibility: visible;
+        position: relative;
+        content: "Dynamically innovate resource-leveling customer service for state of the art customer service. Seamlessly fully researched growth strategies and interoperable internal or organic sources.";
+    }
+
+    .content h4 {
+        margin-bottom: -30px;
+        margin-top: -20px;
+    }
+
 
     .category__head h2 {
         font-size: 24px;
     }
 
+    .category__boxs__box h3 {
+        visibility: hidden;
+    }
+
+    .category__boxs__box h3::before {
+        visibility: visible;
+        position: relative;
+        content: "Organize your digital assets with a new methodology here.  Reach your customers and their needs.";
+    }
+
+    .category__boxs__box button {
+        margin-top: -100px;
+
+    }
+
+    .news {
+        margin-top: 20px;
+    }
+
     .news__header h2 {
         font-size: 22px;
+    }
+
+    .news__button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #button__none {
+        display: block;
     }
 
     .main__button,
