@@ -728,8 +728,9 @@ footer {
 
     .landing__header h1 {
         visibility: hidden;
-        margin: 0;
+        margin-bottom: 80px;
         padding: 0;
+        width: 90%;
     }
 
     .landing__header h1::before {
