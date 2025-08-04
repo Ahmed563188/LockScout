@@ -433,11 +433,6 @@ footer {
 
     .nav__links {
         display: none;
-        /* Hide nav links by default */
-        width: 100%;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 10px 0;
     }
 
     #bars_button {
@@ -453,9 +448,6 @@ footer {
     .nav__button button {
         width: 48%;
     }
-
-
-
 
     .landing__header {
         margin-top: 50px;
@@ -678,7 +670,6 @@ footer {
     }
 }
 
-/* Mobile styles (480px and below) */
 @media (max-width: 480px) {
     .container {
         width: 95%;
@@ -724,7 +715,6 @@ footer {
     }
 }
 
-/* Super mobile styles (320px and below) */
 @media (max-width: 375px) {
     .container {
         width: 90%;
