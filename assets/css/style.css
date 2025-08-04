@@ -690,8 +690,22 @@ footer {
     }
 
     .landing__header h1 {
-        font-size: 28px;
+        visibility: hidden;
+        margin-bottom: 80px;
+        padding: 0;
+        width: 90%;
     }
+
+    .landing__header h1::before {
+        position: relative;
+        content: "Hype got you here. of it. Stay for best ever help.";
+        visibility: visible;
+        display: flex;
+        font-size: 24px;
+        padding-top: 25px;
+        font-size: 36px;
+    }
+
 
     .landing__center__left h2 {
         font-size: 22px;
@@ -725,7 +739,7 @@ footer {
     }
 
     .landing__header {
-        margin-top: 50px;
+        margin-bottom: -200px;
     }
 
     .landing__header h1 {
