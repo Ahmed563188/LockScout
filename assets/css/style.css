@@ -272,9 +272,11 @@ nav {
     margin-top: 50px;
     flex-wrap: wrap;
     row-gap: 40px;
+    justify-content: space-between;
     transition: 0.5s;
-
 }
+
+
 
 .category__boxs__box {
     width: calc(33% - 40px);
