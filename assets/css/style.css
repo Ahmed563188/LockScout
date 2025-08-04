@@ -816,6 +816,11 @@ footer {
         font-size: 24px;
     }
 
+    .category__boxs__box {
+        gap: 30px;
+        width: 100%;
+    }
+
     .category__boxs__box h3 {
         visibility: hidden;
     }
