@@ -676,7 +676,7 @@ footer {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .container {
         width: 90%;
     }
@@ -740,7 +740,7 @@ footer {
 
     .landing__bottom__left p {
         padding: 10px 0;
-        margin-top: -100px;
+        margin-top: -90px;
     }
 
     .landing__center__right__input input {
